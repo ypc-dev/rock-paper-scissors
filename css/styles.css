@@ -1,0 +1,121 @@
+body {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  font-family: 'VT323', monospace;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  grid-template-areas: 
+    "user-score . . . computer-score"
+    ". user-rock . . ."
+    "user-icon user-paper versus computer-hand computer-icon "
+    ". user-scissor . . . ";
+  justify-items: center;
+  align-items: center;
+  width: 75%;
+  margin: 2rem auto 2rem;
+}
+
+/* header */
+#header {
+  font-size: 4rem;
+  width: 80%;
+  color: white;
+  border: white 5px solid;
+  border-radius: 25px;
+  margin: 2rem auto 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* scores */
+#user-score {
+  grid-area: user-score;
+  font-size: 3.5rem;
+  color: white;
+}
+
+#computer-score {
+  grid-area: computer-score;
+  font-size: 3.5rem;
+  color: white;
+}
+
+/* user */
+#user-icon {
+  grid-area: user-icon;
+  color: white;
+}
+
+#user-rock {
+  grid-area: user-rock;
+}
+
+#user-rock:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#user-paper {
+  grid-area: user-paper;
+}
+
+#user-paper:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#user-scissor {
+  grid-area: user-scissor;
+}
+
+#user-scissor:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* computer */
+#computer-icon {
+  grid-area: computer-icon;
+  color: white;
+}
+
+#computer-hand {
+  grid-area: computer-hand;
+}
+
+/* versus */
+#versus {
+  grid-area: versus;
+  font-size: 5rem;
+}
+
+/* restart */
+#restart {
+  font-size: 2rem;
+  width: 10%;
+  color: white;
+  margin: 3rem auto 2rem;
+  text-align: center;
+}
+
+
+#restart button {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  border: white 3px solid;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem 0.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+#restart button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* #restart button:focus {
+  outline: none;
+} */
