@@ -19,7 +19,7 @@ body {
 }
 
 /* header */
-#header {
+.header {
   font-size: 4rem;
   width: 80%;
   color: white;
@@ -41,6 +41,24 @@ body {
   grid-area: computer-score;
   font-size: 3.5rem;
   color: white;
+}
+
+#user-win {
+  grid-area: user-score;
+  font-size: 3.5rem;
+  background-color: rgb(58, 238, 133);
+  color: white;
+  border-radius: 15px;
+  padding: 0rem 1rem 0rem;
+}
+
+#computer-win {
+  grid-area: computer-score;
+  font-size: 3.5rem;
+  background-color: rgb(58, 238, 133);
+  color: white;
+  border-radius: 15px;
+  padding: 0rem 1rem 0rem;
 }
 
 /* user */
@@ -93,7 +111,7 @@ body {
 }
 
 /* restart */
-#restart {
+.footer {
   font-size: 2rem;
   width: 10%;
   color: white;
@@ -102,7 +120,7 @@ body {
 }
 
 
-#restart button {
+.footer button {
   background: rgba(0, 0, 0, 0);
   color: white;
   border: white 3px solid;
@@ -112,10 +130,6 @@ body {
   outline: none;
 }
 
-#restart button:hover {
+.footer button:hover {
   background: rgba(0, 0, 0, 0.2);
 }
-
-/* #restart button:focus {
-  outline: none;
-} */

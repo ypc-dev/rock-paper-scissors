@@ -10,23 +10,24 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="header">ROCK · PAPER · SCISSORS</div>
+  <div class="header">ROCK · PAPER · SCISSORS</div>
   <div class="container">
     <div id="user-score">0</div>
     <div id="computer-score">0</div>
     <div id="user-icon"><i class="fas fa-brain fa-7x"></i></div>
-    <div id="user-rock"><i class="far fa-hand-rock fa-4x"></i></div>
-    <div id="user-paper"><i class="far fa-hand-paper fa-4x"></i></i></div>
-    <div id="user-scissor"><i class="far fa-hand-scissors fa-4x"></i></i></div>
-    <div id="versus">VS</div>
+    <div class="user-hands" id="user-rock"><i class="far fa-hand-rock fa-4x"></i></div>
+    <div class="user-hands" id="user-paper"><i class="far fa-hand-paper fa-4x"></i></i></div>
+    <div class="user-hands" id="user-scissor"><i class="far fa-hand-scissors fa-4x"></i></i></div>
+    <div id="versus">VS
+    </div>
     <div id="computer-hand"><i class="fas fa-question fa-4x"></i></div>
     <div id="computer-icon"><i class="fas fa-robot fa-7x"></i></div>
   </div>
-  <div id="restart">
-    <button>RESTART</button>
+  <div class="footer">
+    <button id="play-button">PLAY</button>
   </div>
   
 
-  <script src="./scripts/script.js"></script>
+  <script src="./scripts/game_logic.js"></script>
 </body>
 </html>
