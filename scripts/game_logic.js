@@ -112,11 +112,14 @@ function showComputersHand(computer_hand) {
   hand.classList.remove(...hand.classList);
 
   if (computer_hand == 'rock') {
-    hand.classList.add('far', 'fa-hand-rock', 'fa-4x');
+    hand.classList.add('far', 'fa-hand-rock', 'fa-4x', 'played');
+    setTimeout(() => hand.classList.remove('played'), 500);
   } else if (computer_hand == 'paper') {
-    hand.classList.add('far', 'fa-hand-paper', 'fa-4x');
+    hand.classList.add('far', 'fa-hand-paper', 'fa-4x', 'played');
+    setTimeout(() => hand.classList.remove('played'), 500);
   } else if (computer_hand == 'scissor') {
-    hand.classList.add('far', 'fa-hand-scissors', 'fa-4x');
+    hand.classList.add('far', 'fa-hand-scissors', 'fa-4x', 'played');
+    setTimeout(() => hand.classList.remove('played'), 500);
   }
 }
 

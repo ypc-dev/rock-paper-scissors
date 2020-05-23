@@ -133,3 +133,10 @@ body {
 .footer button:hover {
   background: rgba(0, 0, 0, 0.2);
 }
+
+/* Play animation */
+.played {
+  transform: scale(1.3);
+  transition: ease;
+  color: white;
+}
